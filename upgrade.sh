@@ -2,7 +2,8 @@
 
 VER=$(cat .last_version.number)
 
+git init
 git status
 git add .
 git commit -m "$VER"
-git push origin master
+git push -u origin master
